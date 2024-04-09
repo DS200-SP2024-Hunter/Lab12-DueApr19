@@ -18,7 +18,7 @@ The code in this lab is adapted from a Jupyter notebook created by [Xavier Snelg
 import numpy as np
 import matplotlib.pyplot as plt
 from keras.datasets import mnist
-from keras.utils import np_utils
+from keras import utils
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
 path_data = 'https://raw.githubusercontent.com/DS200-SP2024-Hunter/Lab12-DueApr19/main/'
@@ -64,14 +64,14 @@ print("Testing array shape", X_test.shape)
 my_range = np.arange(10)
 num_categories = 10
 
-np_utils.to_categorical(my_range, num_categories)
+utils.to_categorical(my_range, num_categories)
 ```
 Based on what you observe, describe how the one-hot format works.
 
 7. Now convert the `y` labels to one-hot format:
 ```
-Y_train = np_utils.to_categorical(y_train, num_categories)
-Y_test = np_utils.to_categorical(y_test, num_categories)
+Y_train = utils.to_categorical(y_train, num_categories)
+Y_test = utils.to_categorical(y_test, num_categories)
 ```
 8. Now it's time to build the neural network.  Our network will have three layers, though discussion of the details is way beyond the scope of this lab. As stated above, we're basically setting up a very complicated regression model.  The code below is copied directly from [Xavier Snelgrove's tutorial](https://github.com/wxs/keras-mnist-tutorial):
 ```
@@ -139,8 +139,8 @@ X_Giovanni = X_Giovanni / 255.0
 X_Darius = X_Darius / 255.0
 
 # Convert the y labels to one-hot format
-Y_Giovanni = np_utils.to_categorical(y_Giovanni, num_categories)
-Y_Darius = np_utils.to_categorical(y_Darius, num_categories)
+Y_Giovanni = utils.to_categorical(y_Giovanni, num_categories)
+Y_Darius = utils.to_categorical(y_Darius, num_categories)
 ```
 15. By adapting code from Step 4, plot some of the digits that Giovanni and Darius produced. Do you notice anything different about them, relative to the MNIST digits?
 To successfully use the code from Step 4, you will need to insert `reshape(28,28)` because both `X_Darius` and `X_Giovanni` must be changed from 1-dimensional arrays of length 784 to 2-dimensional 28x28 arrays.  Check the code in Step 13 to see where `reshape(28,28)` should be inserted.
