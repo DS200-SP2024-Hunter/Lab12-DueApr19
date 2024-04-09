@@ -1,7 +1,7 @@
 # Lab Assignment 12, Due on [Canvas](https://psu.instructure.com/courses/2306358/assignments/16050741), Apr. 20 at 11:59pm
 ## Train and Test a Neural Network on Recognizing Handwritten Digits
 
-**On this and all labs for the rest of the semester: When you have a choice between the [datascience package](https://www.data8.org/datascience/) and the [pandas library](https://pandas.pydata.org/docs/), you are free to use either method to complete your work.**
+**On this lab, none of the code below uses the [datascience package](https://www.data8.org/datascience/) from the textbook.**
 
 The main objective of today's lab is to train a neural network classifier using a famous dataset (MNIST) involving images of handwritten digits.
 
