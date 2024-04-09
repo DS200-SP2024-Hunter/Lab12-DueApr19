@@ -149,7 +149,7 @@ To successfully use the code from Step 4, you will need to insert `reshape(28,28
 
 17. Train a new network on the Giovanni dataset and test it on the Darius dataset.  How does this network perform in terms of prediction accuracy?  Do you have any impressions about how well these neural networks perform at recognizing digits based on what you saw in Steps 15 through 17?
 
-18.  Finally, make sure that your Jupyter notebook only includes code and text that is relevant to this assignment.  For instance, if you have been completing this assignment by editing the original code from Section 13.2, make sure to delete the material that isn't relevant before turning in your work.
+18.  Finally, make sure that your Jupyter notebook only includes code and text that is relevant to this assignment.  
 
 When you've completed this, you should select "Print" from the File menu, then save to pdf using this option.  The pdf file that you create in this way is the file that you should upload to Canvas for grading.  If you have trouble with this step, try selecting the "A3" paper size from the advanced options and making sure that your colab is zoomed out all the way (using ctrl-minus or command-minus).  As an alternative, see below:
 
